@@ -16,3 +16,4 @@ if interactive2_1 == 'да' or interactive2_1 == 'yes':
         print('круто')
     else:
         print(ru.phrase_refusing)
+        print(ru.phrase_search)
