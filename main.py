@@ -61,7 +61,7 @@ if answer1_1.lower() == 'da' or answer1_1.lower() == 'yes':
                 break
 else:
     print()
-time.sleep(1.0)
+time.sleep(1.5)
 # day 2
 print(ru.phrase2_1)
 interactive2_1 = input(ru.phrase2_2)
