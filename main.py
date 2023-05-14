@@ -48,9 +48,11 @@ if answer1_1.lower() == ru.YES or answer1_1.lower() == 'yes':
                     print(ru.PHRASE1_3, budget, ru.RUBLES)
             else:
                 print(ru.PHRASE1_6)
+                continue
         except:
             if answer1_3.isalpha():
                 print('try')
+        break
 else:
     print(ru.PHRASE1_4)
     time.sleep(1.5)
@@ -79,18 +81,20 @@ else:
                     time.sleep(1.0)
                     print(ru.PHRASE1_13)
                 else:
-                    a = input(ru.PHRASE1_10)
+                    print(ru.PHRASE1_10)
                     time.sleep(1.0)
-                    b = input(ru.PHRASE1_11)
+                    print(ru.PHRASE1_11)
                     time.sleep(1.0)
-                    c = input(ru.PHRASE1_12)
+                    print(ru.PHRASE1_12)
                     budget = budget - 500
                     print(ru.PHRASE1_3, budget, ru.RUBLES)
             else:
                 print(ru.PHRASE1_6)
+                continue
         except:
             if answer1_3.isalpha():
                 print('try')
+        break
 time.sleep(1.5)
 # day 2
 print(ru.phrase2_1)
