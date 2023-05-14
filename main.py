@@ -163,7 +163,7 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
                     print(ru.PHRASE1_3, budget, ru.RUBLES)
                     time.sleep(1.0)
                     n_ = input(ru.DAY3_Q5_1_1)
-                    m_
+                    m_ = input(ru.DAY3_Q4_1_2)
                 break
         except:
             if answer_q3.isalpha():
