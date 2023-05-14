@@ -107,7 +107,13 @@ if b_.lower() == YES or b_.lower() == 'yes':
     q_ = input(DAY4_Q1_2)
     r = input(DAY4_Q1_2_2)
 #game
-
+z = input(GAME_1, GAME_0)
+z_0 = input()
+ans_1 = input('25*3>6*10 + 5')
+while time.sleep<=(15) and '1' in ans_1:
+    ans_2 = input('436+416=852')
+    if '2' is ans_2:
+        ans_3 = input('')
 
 
 
