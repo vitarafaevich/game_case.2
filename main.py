@@ -95,7 +95,7 @@ else:
             if answer1_3.isalpha():
                 print('try')
         break
-time.sleep(1.5)
+time.sleep(1.3)
 # day 2
 print(ru.phrase2_1)
 interactive2_1 = input(ru.phrase2_2)
