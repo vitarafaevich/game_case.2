@@ -96,22 +96,55 @@ else:
                 print('try')
         break
 time.sleep(1.3)
+
 # day 2
+print('Day 2')
 print(ru.phrase2_1)
 interactive2_1 = input(ru.phrase2_2)
 interactive2_1 = interactive2_1.strip('!?,.:;-_/ ')
-if interactive2_1 == 'да' or interactive2_1 == 'yes':
+if interactive2_1.lower() == ru.YES or interactive2_1.lower() == 'yes':
     interactive2_1_1 = input(ru.phrase2_2_1)
     interactive2_1_1 = interactive2_1_1.strip('!?,.:;-_/ ')
     if interactive2_1_1 == '1':
         print(ru.phrase_singly)
     interactive2_1_2 = input(ru.phrase2_2_2)
     interactive2_1_2 = interactive2_1_2.strip('!?,.:;-_/ ')
-    if interactive2_1_2 == 'да' or interactive2_1_2 == 'yes':
-        print('круто')
+    if interactive2_1_2.lower() == ru.YES or interactive2_1_2.lower() == 'yes':
+
+        while True:
+            interactive_couple = input(ru.phrase_mutual_lang)
+            interactive_couple = interactive_couple.strip('!?,.:;-_/ ')
+            if interactive_couple.lower() == ru.YES or interactive_couple.lower() == 'yes':
+                print(ru.phrase_accord)
+                time.sleep(2.0)
+                print(ru.phrase_cellar)
+                time.sleep(2.0)
+            else:
+                break
+        print(ru.phrase_conviction)
+        time.sleep(2.0)
+        print(ru.phrase_search)
+        budget = budget - 1800
+        print(ru.PHRASE1_3, budget, ru.RUBLES)
+
     else:
         print(ru.phrase_refusing)
+        time.sleep(1.5)
         print(ru.phrase_search)
+        budget = budget - 1800
+        print(ru.PHRASE1_3, budget, ru.RUBLES)
+
+else:
+    time.sleep(1.0)
+    print(ru.phrase_good)
+    time.sleep(2.0)
+    print(ru.phrase_lada)
+    time.sleep(2.0)
+    print(ru.phrase_hotel)
+    time.sleep(2.0)
+    print(ru.phrase_spending)
+    budget = budget - 800
+    print(ru.PHRASE1_3, budget, ru.RUBLES)
 
 #day 3
 print('Day 3')
