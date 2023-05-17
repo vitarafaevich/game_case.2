@@ -58,42 +58,38 @@ else:
     time.sleep(1.5)
     while True:
         answer1_3 = input(ru.PHRASE1_5)
-        try:
-            if answer1_3.lower() == ru.YES or answer1_3.lower() == 'yes':
-                answer1_4 = input(ru.PHRASE1_7)
-                answer1_4_1 = answer1_4.strip(' ,.;')
-                summ = 0
-                if '1' in answer1_4_1:
-                    summ += 200
-                if '2' in answer1_4_1:
-                    summ += 300
-                if '3' in answer1_4_1:
-                    summ += 200
-                budget = budget - summ
+        if answer1_3.lower() == ru.YES or answer1_3.lower() == 'yes':
+            answer1_4 = input(ru.PHRASE1_7)
+            answer1_4_1 = answer1_4.strip(' ,.;')
+            summ = 0
+            if '1' in answer1_4_1:
+                summ += 200
+            if '2' in answer1_4_1:
+                summ += 300
+            if '3' in answer1_4_1:
+                summ += 200
+            budget = budget - summ
+            print(ru.PHRASE1_3, budget, ru.RUBLES)
+            time.sleep(1.0)
+            print(ru.PHRASE1_9)
+            time.sleep(1.5)
+            answer1_5 = input(ru.PHRASE1_8)
+            if answer1_5.lower() == ru.YES or answer1_5.lower() == 'yes':
+                budget = budget - 300
                 print(ru.PHRASE1_3, budget, ru.RUBLES)
                 time.sleep(1.0)
-                print(ru.PHRASE1_9)
-                time.sleep(1.5)
-                answer1_5 = input(ru.PHRASE1_8)
-                if answer1_5.lower() == ru.YES or answer1_5.lower() == 'yes':
-                    budget = budget - 300
-                    print(ru.PHRASE1_3, budget, ru.RUBLES)
-                    time.sleep(1.0)
-                    print(ru.PHRASE1_13)
-                else:
-                    print(ru.PHRASE1_10)
-                    time.sleep(1.0)
-                    print(ru.PHRASE1_11)
-                    time.sleep(1.0)
-                    print(ru.PHRASE1_12)
-                    budget = budget - 500
-                    print(ru.PHRASE1_3, budget, ru.RUBLES)
+                print(ru.PHRASE1_13)
             else:
-                print(ru.PHRASE1_6)
-                continue
-        except:
-            if answer1_3.isalpha():
-                print('try')
+                print(ru.PHRASE1_10)
+                time.sleep(1.0)
+                print(ru.PHRASE1_11)
+                time.sleep(1.0)
+                print(ru.PHRASE1_12)
+                budget = budget - 500
+                print(ru.PHRASE1_3, budget, ru.RUBLES)
+        else:
+            print(ru.PHRASE1_6)
+            continue
         break
 time.sleep(1.3)
 
