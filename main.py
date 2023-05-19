@@ -189,16 +189,16 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
                 n_ = input(ru.DAY3_Q5_1_1)
                 m_ = input(ru.DAY3_Q4_1_2)
             break
-    print(ru.DAY3_Q6_1_1)
-    time.sleep(1.5)
-    print(ru.PHRASE3_23)
-    budget = budget - 400
-    print(ru.DAY3_Q6_1_3, ru.PHRASE1_3, budget, ru.RUBLES)
-    time.sleep(2.0)
-    print(ru.DAY3_Q6_1_2)
-    time.sleep(1.5)
-    print('Day 4')
-    time.sleep(1.5)
-    q_ = input(ru.DAY4_Q1_2)
-    r = input(ru.DAY4_Q1_2_2)
+print(ru.DAY3_Q6_1_1)
+time.sleep(1.5)
+print(ru.PHRASE3_23)
+budget = budget - 400
+print(ru.DAY3_Q6_1_3, ru.PHRASE1_3, budget, ru.RUBLES)
+time.sleep(2.0)
+print(ru.DAY3_Q6_1_2)
+time.sleep(1.5)
+print('Day 4')
+time.sleep(1.5)
+q_ = input(ru.DAY4_Q1_2)
+r = input(ru.DAY4_Q1_2_2)
 
