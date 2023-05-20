@@ -1,4 +1,5 @@
 import ru_local as ru
+import game
 import time
 budget = 16000
 a = input(ru.BEGIN)
@@ -212,4 +213,5 @@ time.sleep(1.5)
 print(ru.DAY4_Q1_2)
 time.sleep(2.0)
 print(ru.DAY4_Q1_2_2)
+game.game()
 
