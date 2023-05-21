@@ -96,6 +96,7 @@ time.sleep(1.5)
 
 # day 2
 print('Day 2')
+time.sleep(1.5)
 print(ru.phrase2_1)
 interactive2_1 = input(ru.phrase2_2)
 interactive2_1 = interactive2_1.strip('!?,.:;-_/ ')
@@ -135,7 +136,7 @@ if interactive2_1.lower() == ru.YES or interactive2_1.lower() == 'yes':
         time.sleep(2.0)
 
 else:
-    time.sleep(1.0)
+    time.sleep(2.0)
     print(ru.phrase_good)
     time.sleep(2.0)
     print(ru.phrase_lada)
@@ -146,37 +147,41 @@ else:
     time.sleep(2.0)
     budget = budget - 800
     print(ru.PHRASE1_3, budget, ru.RUBLES)
-    time.sleep(2.0)
+    time.sleep(3.0)
 
 #day 3
 print('Day 3')
 time.sleep(1.5)
 print(ru.DAY3_Q1)
+time.sleep(2.5)
 budget = budget - 2500
 print(ru.PHRASE1_3, budget, ru.RUBLES)
-time.sleep(1.0)
+time.sleep(2.0)
 b_ = input(ru.DAY3_Q2)
 if b_.lower() == ru.NO or b_.lower() == 'no':
     print(ru.DAY3_Q2_NO)
     time.sleep(2.5)
     print('Day 4')
-    time.sleep(2.5)
+    time.sleep(1.5)
 if b_.lower() == ru.YES or b_.lower() == 'yes':
     print(ru.DAY3_Q2_YES_1_1)
     time.sleep(2.0)
     print(ru.PHRASE3_5)
     time.sleep(2.0)
     print(ru.DAY3_Q2_YES_1_2)
-    time.sleep(2.0)
+    time.sleep(3.0)
     while True:
         answer_q3 = input(ru.DAY3_Q2_YES_1_3)
         if '1' in answer_q3:
+            time.sleep(1.5)
             print(ru.DAY3_Q3_1)
             budget1 = budget - 5000
             print(ru.PHRASE1_3, budget1, ru.RUBLES)
+            time.sleep(2.0)
             print(ru.PHRASE3_13)
             time.sleep(2.5)
             print(ru.DAY3_Q3_1_2)
+            time.sleep(2.5)
             print(ru.DAY3_Q3_1_3)
             time.sleep(2.0)
             print(ru.DAY3_Q3_1_4)
@@ -184,21 +189,23 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
             print(ru.DAY3_Q3_1_5)
             time.sleep(2.0)
         else:
+            time.sleep(1.5)
             print(ru.DAY3_Q3_2_1)
             time.sleep(2.0)
             print(ru.DAY3_Q3_2_2)
             if answer1_5.lower() == ru.YES or answer1_5.lower() == 'yes':
                 budget = budget - 2500
                 print(ru.PHRASE1_3, budget, ru.RUBLES)
-                time.sleep(1.0)
+                time.sleep(2.0)
                 print(ru.DAY3_Q4_1_1)
             if answer1_5.lower() == ru.NO or answer1_5.lower() == 'no':
                 budget = budget - 5000
                 print(ru.PHRASE1_3, budget, ru.RUBLES)
-                time.sleep(1.0)
+                time.sleep(2.0)
                 print(ru.DAY3_Q5_1_1)
                 time.sleep(2.0)
                 print(ru.DAY3_Q4_1_2)
+                time.sleep(2.0)
             break
     time.sleep(2.0)
     print(ru.DAY3_Q6_1_1)
@@ -208,12 +215,61 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
     print(ru.DAY3_Q6_1_3, ru.PHRASE1_3, budget, ru.RUBLES)
     time.sleep(2.0)
     print(ru.DAY3_Q6_1_2)
-    time.sleep(1.5)
+    time.sleep(2.5)
     print('Day 4')
     time.sleep(1.5)
     print(ru.DAY4_Q1_2)
+    time.sleep(2.0)
+if b_.lower() == ru.YES or b_.lower() == 'yes':
+    time.sleep(2.0)
+    print(ru.DAY4_Q1_2_2)
+    time.sleep(2.0)
+    game.game()
+    print(ru.DAY4_CONCLUSION)
+    time.sleep(2.0)
+    budget = budget + 10000
+    print(ru.PHRASE1_3, budget, ru.RUBLES)
+    time.sleep(2.0)
+    while True:
+        k = input(ru.DAY4_RENT)
+        if k == '1':
+            if budget - 6600 >= 0:
+                print(ru.DAY4_CHOISE)
+            else :
+                print(ru.DAY4_NOMONEY)
+                continue
+        elif k == '2':
+            if budget - 20000 >= 0:
+                print(ru.DAY4_CHOISE)
+            else:
+                print(ru.DAY4_NOMONEY)
+                continue
+        else:
+            if budget - 12000 >= 0:
+                print(ru.DAY4_CHOISE)
+            else:
+                print(ru.DAY4_NOMONEY)
+                continue
+        break
+else:
+    if budget<= 5000:
+        print(ru.DAY4_Q1_1)
+        game.game()
+        time.sleep(3.0)
+        print(ru.DAY4_CONCLUSION1)
+        time.sleep(2.0)
+    else:
+        print(ru.PHRASE1_3, budget, ru.RUBLES)
+        time.sleep(1.5)
+        coffee = input(ru.DAY4_PETROL)
+        if coffee.lower() == ru.YES or coffee.lower() == 'yes':
+            budget = budget - 5300
+            print(ru.PHRASE1_3, budget, ru.RUBLES)
+        else:
+            budget = budget - 5000
+            print(ru.PHRASE1_3, budget, ru.RUBLES)
 time.sleep(2.0)
-print(ru.DAY4_Q1_2_2)
-game.game()
+print(ru.DAY4_ROAD)
+
 
 
