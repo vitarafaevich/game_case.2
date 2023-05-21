@@ -161,7 +161,6 @@ if b_.lower() == ru.NO or b_.lower() == 'no':
     time.sleep(2.5)
     print('Day 4')
     time.sleep(2.5)
-    y_ = input(ru.DAY4_Q1_1)
 if b_.lower() == ru.YES or b_.lower() == 'yes':
     print(ru.DAY3_Q2_YES_1_1)
     time.sleep(2.0)
@@ -211,8 +210,8 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
     print(ru.DAY3_Q6_1_2)
     time.sleep(1.5)
     print('Day 4')
-time.sleep(1.5)
-print(ru.DAY4_Q1_2)
+    time.sleep(1.5)
+    print(ru.DAY4_Q1_2)
 time.sleep(2.0)
 print(ru.DAY4_Q1_2_2)
 game.game()
