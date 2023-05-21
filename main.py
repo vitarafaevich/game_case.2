@@ -1,7 +1,7 @@
 """
-Kotlyarova Polina 92
-Rafaevich Vita 92
-Leonov Kirill 89
+Kotlyarova Polina 93
+Rafaevich Vita 93
+Leonov Kirill 93
 """
 
 import time
