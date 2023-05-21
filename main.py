@@ -1,8 +1,15 @@
-import ru_local as ru
-import game
+"""
+Kotlyarova Polina 92
+Rafaevich Vita 92
+Leonov Kirill 89
+"""
+
 import time
-import os
+import game
+import ru_local as ru
+
 budget = 16000
+
 a = input(ru.BEGIN)
 print('Day 1')
 answer1_1 = input(ru.PHRASE1_1)
