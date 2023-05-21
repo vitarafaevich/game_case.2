@@ -105,6 +105,7 @@ if interactive2_1.lower() == ru.YES or interactive2_1.lower() == 'yes':
     interactive2_1_1 = interactive2_1_1.strip('!?,.:;-_/ ')
     if interactive2_1_1 == '1':
         print(ru.phrase_singly)
+        time.sleep(1.5)
     interactive2_1_2 = input(ru.phrase2_2_2)
     interactive2_1_2 = interactive2_1_2.strip('!?,.:;-_/ ')
     if interactive2_1_2.lower() == ru.YES or interactive2_1_2.lower() == 'yes':
@@ -127,6 +128,7 @@ if interactive2_1.lower() == ru.YES or interactive2_1.lower() == 'yes':
         print(ru.PHRASE1_3, budget, ru.RUBLES)
         time.sleep(2.0)
     else:
+        time.sleep(2.0)
         print(ru.phrase_refusing)
         time.sleep(2.0)
         print(ru.phrase_search)
@@ -225,6 +227,7 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
     print(ru.DAY4_Q1_2_2)
     time.sleep(2.0)
     game.game()
+    time.sleep(1.5)
     print(ru.DAY4_CONCLUSION)
     time.sleep(2.0)
     budget = budget + 10000
@@ -252,24 +255,37 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
                 continue
         break
 else:
-    if budget<= 5000:
+    if budget<= 10000:
         print(ru.DAY4_Q1_1)
+        time.sleep(2.0)
         game.game()
-        time.sleep(3.0)
+        time.sleep(1.5)
         print(ru.DAY4_CONCLUSION1)
         time.sleep(2.0)
+        budget = budget + 10000
+        print(ru.PHRASE1_3, budget, ru.RUBLES)
+        coffee = input(ru.COFFEE)
+        if coffee.lower() == ru.YES or coffee.lower() == 'yes':
+            budget = budget - 10300
+            print(ru.PHRASE1_3, budget, ru.RUBLES)
+        else:
+            budget = budget - 10000
+            print(ru.PHRASE1_3, budget, ru.RUBLES)
+
     else:
         print(ru.PHRASE1_3, budget, ru.RUBLES)
         time.sleep(1.5)
         coffee = input(ru.DAY4_PETROL)
         if coffee.lower() == ru.YES or coffee.lower() == 'yes':
-            budget = budget - 5300
+            budget = budget - 10300
             print(ru.PHRASE1_3, budget, ru.RUBLES)
         else:
-            budget = budget - 5000
+            budget = budget - 10000
             print(ru.PHRASE1_3, budget, ru.RUBLES)
 time.sleep(2.0)
 print(ru.DAY4_ROAD)
+time.sleep(1.5)
+print(ru.END)
 
 
 
