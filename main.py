@@ -2,7 +2,6 @@ import ru_local as ru
 import game
 import time
 import os
-os.startfile(r'C:\Users\polin\Downloads\IMG_0999.JPEG')
 budget = 16000
 a = input(ru.BEGIN)
 print('Day 1')
