@@ -1,6 +1,8 @@
 import ru_local as ru
 import game
 import time
+import os
+os.startfile(r'C:\Users\polin\Downloads\IMG_0999.JPEG')
 budget = 16000
 a = input(ru.BEGIN)
 print('Day 1')
@@ -155,7 +157,7 @@ print(ru.PHRASE1_3, budget, ru.RUBLES)
 time.sleep(1.0)
 b_ = input(ru.DAY3_Q2)
 if b_.lower() == ru.NO or b_.lower() == 'no':
-    x_ = input(ru.DAY3_Q2_NO)
+    print(ru.DAY3_Q2_NO)
     time.sleep(2.5)
     print('Day 4')
     time.sleep(2.5)
@@ -199,19 +201,20 @@ if b_.lower() == ru.YES or b_.lower() == 'yes':
                 time.sleep(2.0)
                 print(ru.DAY3_Q4_1_2)
             break
-time.sleep(2.0)
-print(ru.DAY3_Q6_1_1)
-time.sleep(1.5)
-print(ru.PHRASE3_23)
-budget = budget - 400
-print(ru.DAY3_Q6_1_3, ru.PHRASE1_3, budget, ru.RUBLES)
-time.sleep(2.0)
-print(ru.DAY3_Q6_1_2)
-time.sleep(1.5)
-print('Day 4')
+    time.sleep(2.0)
+    print(ru.DAY3_Q6_1_1)
+    time.sleep(1.5)
+    print(ru.PHRASE3_23)
+    budget = budget - 400
+    print(ru.DAY3_Q6_1_3, ru.PHRASE1_3, budget, ru.RUBLES)
+    time.sleep(2.0)
+    print(ru.DAY3_Q6_1_2)
+    time.sleep(1.5)
+    print('Day 4')
 time.sleep(1.5)
 print(ru.DAY4_Q1_2)
 time.sleep(2.0)
 print(ru.DAY4_Q1_2_2)
 game.game()
+
 
